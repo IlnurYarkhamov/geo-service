@@ -1,7 +1,6 @@
 package ru.netology;
 
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import ru.netology.entity.Country;
 import ru.netology.entity.Location;
 import ru.netology.geo.GeoService;
@@ -20,7 +19,7 @@ import static org.mockito.Mockito.when;
 
 class MessageSenderTest {
     @Test
-    public void testChecklanguages() {
+    public void testCheckLanguages() {
         //Задание. Проверка отправки только русского текста, если ip российский
         Location location = mock(Location.class);
         when(location.getCountry()).thenReturn(Country.valueOf("USA"));
